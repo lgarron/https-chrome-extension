@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "HTTPS",
+  "description": "Switches the current URL to HTTPS.",
+  "version": "1.0",
+  "icons": {
+    "128": "images/extensionIcon-128px.png"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["eventPage.js"],
+    "persistent": true
+  },
+  "page_action": {
+    "default_title": "Go secure!",
+    "default_icon": {
+      "19": "images/pageActionIconSecure-19px.png",
+      "38": "images/pageActionIconSecure-38px.png"
+    }
+  },
+  "options_page": "options/options.html"
+}
