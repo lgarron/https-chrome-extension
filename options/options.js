@@ -1,6 +1,6 @@
 // Saves options to chrome.storage
 function save_options() {
-  var alwaysShow = document.getElementById('alwaysShow').value;
+  var alwaysShow = document.getElementById('alwaysShow').checked;
   chrome.storage.sync.set({
     alwaysShow: alwaysShow,
   }, function() {
